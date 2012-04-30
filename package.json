@@ -1,0 +1,20 @@
+{
+  "name": "redsplit",
+  "description": "Helper functions for splitting redis host strings into usable JavaScript objects",
+  "version": "0.0.1",
+  "author": "Van Nguyen <thegoleffect@gmail.com>",
+  "contributors": [],
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": ""
+  },
+  "keywords": ["redis", "splitting", "redis authentication", "redis auth"],
+  "repository": "https://github.com/thegoleffect/redsplit",
+  "main": "index",
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "scripts": {
+    "test": "make test"
+  }
+}
