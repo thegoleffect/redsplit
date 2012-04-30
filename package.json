@@ -6,7 +6,8 @@
   "contributors": [],
   "dependencies": {},
   "devDependencies": {
-    "mocha": ""
+    "mocha": "1.0.2",
+    "should": "0.6.3"
   },
   "keywords": ["redis", "splitting", "redis authentication", "redis auth"],
   "repository": "https://github.com/thegoleffect/redsplit",

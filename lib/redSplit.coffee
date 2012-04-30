@@ -1,4 +1,5 @@
 url = require("url")
+redisMap = {}
 
 redSplit = (hoststr, mapping = redisMap) ->
   parsed = url.parse(hoststr)
@@ -7,4 +8,13 @@ redSplit = (hoststr, mapping = redisMap) ->
     parsed.auth = parsed.authpair.split(":").pop()
   return parsed
 
-module.exports = redSplit
+redJoin = (hostobj) ->
+  if hostobj.authpair?
+    hostobj.auth = hostobj.authpair
+    delete hostobj.authpair
+  
+  return url.format(hostobj)
+
+module.exports = exports = redSplit
+exports.split = redSplit
+exports.join = redJoin

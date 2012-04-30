@@ -1,6 +1,11 @@
 REPORTER = dot
 
-test:
+all: coffee
+
+coffee:
+	@coffee -bc lib
+
+test: all
 	@NODE_ENV=test ./node_modules/.bin/mocha --reporter $(REPORTER)
 
-.PHONY: test
+.PHONY: test all coffee
