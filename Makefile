@@ -3,7 +3,7 @@ REPORTER = dot
 all: coffee
 
 coffee:
-	@coffee -bc lib
+	@./node_modules/.bin/coffee -bc lib
 
 test: all
 	@NODE_ENV=test ./node_modules/.bin/mocha --reporter $(REPORTER)
