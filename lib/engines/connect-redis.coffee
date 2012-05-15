@@ -1,5 +1,5 @@
 exports.split = (hostObj) ->
-  hostObj.pass = parsed.authpair.split(":").pop()
+  hostObj.pass = hostObj.auth.split(":").pop()
   return hostObj
 
 exports.join = (hostObj) ->

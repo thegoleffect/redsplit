@@ -11,8 +11,8 @@ describe("#redSplit", function(){
   var known_valid_host_object = {
     protocol: 'protocol:',
     slashes: true,
-    authpair: 'username:auth',
-    auth: "auth",
+    auth: 'username:auth',
+    pass: "auth",
     host: 'hostname:6379',
     port: '6379',
     hostname: 'hostname',

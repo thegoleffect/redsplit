@@ -1,6 +1,6 @@
 exports.split = (hostObj) ->
   hostObj.authpair = hostObj.auth
-  hostObj.auth = parsed.authpair.split(":").pop()
+  hostObj.auth = hostObj.authpair.split(":").pop()
   return hostObj
 
 exports.join = (hostObj) ->
